@@ -9,6 +9,6 @@
     Selenium 4.x or any newer version
     ReportNG (new and improved - https://github.com/sdrss/reportNG?tab=readme-ov-file)
 
-To run from terminal using Maven, mvn clean test -Dthreads=<number of devices/browsers> -Dsuites=src/test/resources/Mobile.xml
+To run from terminal using Maven, mvn clean test -Dthreads=<number of devices> -Dsuites=src/test/resources/Mobile.xml
 
 The intent of this project is for illustrative purposes only. The code can be freely used and modified as needed.
