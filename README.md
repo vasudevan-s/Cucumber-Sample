@@ -1,5 +1,5 @@
 # Sauce-Labs-Demo-App-automation-With-Cucumber
- This demo project showcases automation with Cucumber for SauceLabs Demo App. The following tools are used:
+ This demo project showcases automation with Cucumber for SauceLabs Demo App. It uses the same UnifiedTestFramework available here. The following tools are used:
 
     Cucumber
     TestNG
