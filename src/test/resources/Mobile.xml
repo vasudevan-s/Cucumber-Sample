@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Created By: Vasudevan Sampath -->
+
+<suite name="SauceLabs Demo App Automation Suite" parallel="tests" thread-count="3" verbose="1" >
+
+    <listeners>
+        <listener class-name="pro.vasudevan.listeners.SuiteListener"/>
+        <listener class-name="pro.vasudevan.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Simulator-Regression-iPad-Pro" enabled="true">
+        <parameter name="deviceName" value="iPad Pro (12.9-inch) (6th generation)"/>
+        <parameter name="udid" value="83DA5881-6BBF-45E1-8A74-8996F952FEA2"/>
+        <parameter name="platformVersion" value="17.4"/>
+        <parameter name="automationName" value="xcuitest"/>
+        <parameter name="bundleId" value="com.saucelabs.mydemoapp.rn"/>
+        <parameter name="platformName" value="iOS"/>
+<!--
+        <parameter name="loginId" value="alice@example.com"/>
+        <parameter name="password" value="10203040"/>
+-->
+        <classes>
+            <class name="com.saucelabs.mydemoapp.runner.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Simulator-Regression-iPad-Mini" enabled="true">
+        <parameter name="deviceName" value="iPad mini (6th generation)"/>
+        <parameter name="udid" value="9400005C-F4BC-41D9-99DC-7773192DC802"/>
+        <parameter name="platformVersion" value="17.4"/>
+        <parameter name="automationName" value="xcuitest"/>
+        <parameter name="bundleId" value="com.saucelabs.mydemoapp.rn"/>
+        <parameter name="platformName" value="iOS"/>
+        <!--
+                <parameter name="loginId" value="alice@example.com"/>
+                <parameter name="password" value="10203040"/>
+        -->
+        <classes>
+            <class name="com.saucelabs.mydemoapp.runner.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Simulator-Regression-iPhone" enabled="true">
+        <parameter name="deviceName" value="iPhone 15 Pro Max"/>
+        <parameter name="udid" value="D2D7C185-7856-4245-824E-C2BB70265580"/>
+        <parameter name="platformVersion" value="17.4"/>
+        <parameter name="automationName" value="xcuitest"/>
+        <parameter name="bundleId" value="com.saucelabs.mydemoapp.rn"/>
+        <parameter name="platformName" value="iOS"/>
+<!--
+        <parameter name="loginId" value="alice@example.com"/>
+        <parameter name="password" value="10203040"/>
+-->
+        <classes>
+            <class name="com.saucelabs.mydemoapp.runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
