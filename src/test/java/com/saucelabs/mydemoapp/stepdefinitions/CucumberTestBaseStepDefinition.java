@@ -14,7 +14,12 @@ Created By: Vasudevan Sampath
  */
 public class CucumberTestBaseStepDefinition {
     @BeforeAll()
-    public static void before_all() {IDriverConfig.initDriver(Reporter.getCurrentTestResult().getTestContext());}
+    public static void before_all() {
+        IDriverConfig.initDriver(Reporter.getCurrentTestResult().getTestContext());
+    }
+
     @AfterAll()
-    public static void after_all() {IDriverConfig.tearDown();}
+    public static void after_all() {
+        IDriverConfig.tearDown();
+    }
 }
