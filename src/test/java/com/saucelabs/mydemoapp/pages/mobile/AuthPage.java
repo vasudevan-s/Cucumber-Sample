@@ -20,7 +20,6 @@ public class AuthPage extends AppObjectRepository {
         return loginIdAutoFill.isDisplayed();
     }
     public void navigateToLoginPage() {
- //       rootWindow.click();
         if (Common.waitForAnyExpectedCondition(ExpectedConditions.visibilityOf(bottomMenuItem), 120) != null) {
             bottomMenuItem.click();
             loginMenuItem.click();
