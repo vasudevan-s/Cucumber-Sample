@@ -3,11 +3,11 @@ package com.saucelabs.mydemoapp.objectrepository;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import pro.vasudevan.config.IDriverConfig;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import pro.vasudevan.config.IWebDriverConfig;
 
 import java.util.List;
 
@@ -91,8 +91,8 @@ public abstract class AppObjectRepository {
     protected WebElement bottomCatalogItem;
 
     protected AppObjectRepository() {
-        if (IDriverConfig.getDriver() instanceof AppiumDriver) {
-            PageFactory.initElements(new AppiumFieldDecorator(IDriverConfig.getDriver()), this);
+        if (IWebDriverConfig.getDriver() instanceof AppiumDriver) {
+            PageFactory.initElements(new AppiumFieldDecorator(IWebDriverConfig.getDriver()), this);
         }
     }
 }

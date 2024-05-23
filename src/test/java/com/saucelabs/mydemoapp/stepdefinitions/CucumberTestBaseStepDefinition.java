@@ -3,7 +3,7 @@ package com.saucelabs.mydemoapp.stepdefinitions;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeAll;
 import org.testng.Reporter;
-import pro.vasudevan.config.IDriverConfig;
+import pro.vasudevan.config.IWebDriverConfig;
 
 /*
 Created By: Vasudevan Sampath
@@ -15,11 +15,11 @@ Created By: Vasudevan Sampath
 public class CucumberTestBaseStepDefinition {
     @BeforeAll()
     public static void before_all() {
-        IDriverConfig.initDriver(Reporter.getCurrentTestResult().getTestContext());
+        IWebDriverConfig.initDriver(Reporter.getCurrentTestResult().getTestContext());
     }
 
     @AfterAll()
     public static void after_all() {
-        IDriverConfig.tearDown();
+        IWebDriverConfig.tearDown();
     }
 }

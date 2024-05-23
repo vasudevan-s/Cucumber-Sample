@@ -2,9 +2,8 @@ package com.saucelabs.mydemoapp.pages.mobile;
 
 import com.saucelabs.mydemoapp.objectrepository.AppObjectRepository;
 import io.appium.java_client.ios.IOSDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pro.vasudevan.config.IDriverConfig;
+import pro.vasudevan.config.IWebDriverConfig;
 import pro.vasudevan.constants.Global;
 import pro.vasudevan.helpers.IScrollHelper;
 import pro.vasudevan.misc.Common;
@@ -55,7 +54,7 @@ public class ProductsPage extends AppObjectRepository {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        int cartCount = IDriverConfig.getDriver() instanceof IOSDriver ?
+        int cartCount = IWebDriverConfig.getDriver() instanceof IOSDriver ?
                 Integer.parseInt(optionCart.getFirst().getAttribute("label")) :
                 Integer.parseInt(optionCart.getFirst().getAttribute("text"));
 
