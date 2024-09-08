@@ -10,8 +10,8 @@
     <version>1.2</version>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>22</maven.compiler.source>
+        <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <suites>xml file names comma separated.xml</suites>
         <threads>1</threads>
@@ -116,7 +116,7 @@
         <dependency>
             <groupId>pro.vasudevan</groupId>
             <artifactId>UnifiedTestFramework</artifactId>
-            <version>1.4</version>
+            <version>1.5</version>
         </dependency>
     </dependencies>
 </project>

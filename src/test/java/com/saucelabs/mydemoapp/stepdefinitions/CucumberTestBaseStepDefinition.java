@@ -14,7 +14,7 @@ Created By: Vasudevan Sampath
  */
 public class CucumberTestBaseStepDefinition {
     @BeforeAll()
-    public static void before_all() {
+    public static void before_all() throws InterruptedException {
         IWebDriverConfig.initDriver(Reporter.getCurrentTestResult().getTestContext());
     }
 
