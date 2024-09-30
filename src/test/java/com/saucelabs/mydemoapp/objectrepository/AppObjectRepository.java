@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
-import pro.vasudevan.config.IWebDriverConfig;
+import pro.vasudevan.automation.unifiedtestframework.config.IWebDriverConfig;
 
 import java.util.List;
 

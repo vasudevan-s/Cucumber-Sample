@@ -3,7 +3,7 @@ package com.saucelabs.mydemoapp.stepdefinitions;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeAll;
 import org.testng.Reporter;
-import pro.vasudevan.config.IWebDriverConfig;
+import pro.vasudevan.automation.unifiedtestframework.config.IWebDriverConfig;
 
 /*
 Created By: Vasudevan Sampath

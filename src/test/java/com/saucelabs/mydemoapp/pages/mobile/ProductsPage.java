@@ -3,10 +3,10 @@ package com.saucelabs.mydemoapp.pages.mobile;
 import com.saucelabs.mydemoapp.objectrepository.AppObjectRepository;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pro.vasudevan.config.IWebDriverConfig;
-import pro.vasudevan.constants.Global;
-import pro.vasudevan.helpers.IScrollHelper;
-import pro.vasudevan.misc.Common;
+import pro.vasudevan.automation.unifiedtestframework.config.IWebDriverConfig;
+import pro.vasudevan.automation.unifiedtestframework.constants.Global;
+import pro.vasudevan.automation.unifiedtestframework.interfaces.IScrollHelper;
+import pro.vasudevan.automation.unifiedtestframework.misc.Common;
 
 import java.util.Random;
 import java.util.function.Supplier;
@@ -32,7 +32,7 @@ public class ProductsPage extends AppObjectRepository {
     public boolean isSelectedProductDisplayed() {
         try {
             Thread.sleep(2000);
-            IScrollHelper.swipe(Global.SwipeOptions.UP);
+            IScrollHelper.swipe(Global.SwipeScrollDirection.UP);
         } catch (Exception ex) {
             ex.printStackTrace();
         }

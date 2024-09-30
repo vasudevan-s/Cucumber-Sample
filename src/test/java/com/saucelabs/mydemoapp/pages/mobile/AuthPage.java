@@ -1,9 +1,9 @@
 package com.saucelabs.mydemoapp.pages.mobile;
 
 import com.saucelabs.mydemoapp.objectrepository.AppObjectRepository;
-import pro.vasudevan.constants.Global;
-import pro.vasudevan.helpers.IScrollHelper;
-import pro.vasudevan.misc.Common;
+import pro.vasudevan.automation.unifiedtestframework.constants.Global;
+import pro.vasudevan.automation.unifiedtestframework.interfaces.IScrollHelper;
+import pro.vasudevan.automation.unifiedtestframework.misc.Common;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /*
@@ -15,7 +15,7 @@ public class AuthPage extends AppObjectRepository {
 
     public boolean isLoginPageVisible() {
         if (Common.waitForAnyExpectedCondition(ExpectedConditions.visibilityOf(userNameInputField)) != null) {
-            IScrollHelper.swipe(Global.SwipeOptions.UP);
+            IScrollHelper.swipe(Global.SwipeScrollDirection.UP);
         }
         return loginIdAutoFill.isDisplayed();
     }
