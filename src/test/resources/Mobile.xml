@@ -3,14 +3,14 @@
 
 <!-- Created By: Vasudevan Sampath -->
 
-<suite name="SauceLabs Demo App Automation Suite" parallel="tests" thread-count="6" verbose="1">
+<suite name="SauceLabs Demo App Automation Suite" parallel="tests" thread-count="2" verbose="1">
 
     <listeners>
-        <listener class-name="pro.vasudevan.listeners.SuiteListener"/>
-        <listener class-name="pro.vasudevan.listeners.TestListener"/>
+        <listener class-name="pro.vasudevan.automation.unifiedtestframework.listeners.SuiteListener"/>
+        <listener class-name="pro.vasudevan.automation.unifiedtestframework.listeners.TestListener"/>
     </listeners>
 
-    <test name="Simulator-Regression-iPad-Pro-M4" enabled="true">
+    <test name="Simulator-Regression-iPad-Pro-M4" enabled="false">
         <parameter name="deviceName" value="iPad Pro (13-inch) M4"/>
         <parameter name="udid" value="2E8A5FB0-433A-41E4-91BF-6F247FDAD0A1"/>
         <parameter name="platformVersion" value="17.5"/>
@@ -26,10 +26,10 @@
         </classes>
     </test>
 
-    <test name="Simulator-Regression-iPhone15-Pro-Max" enabled="true">
-        <parameter name="deviceName" value="iPhone 15 Pro Max"/>
-        <parameter name="udid" value="A1C5CDE0-8C39-4857-96C8-137CFA0809A0"/>
-        <parameter name="platformVersion" value="17.5"/>
+    <test name="Simulator-Regression-iPhone16-ProMax" enabled="false">
+        <parameter name="deviceName" value="iPhone 16 Pro Max"/>
+        <parameter name="udid" value="1C4DD6FC-6287-478B-8F72-CC979AB7CADB"/>
+        <parameter name="platformVersion" value="18.0"/>
         <parameter name="automationName" value="xcuitest"/>
         <parameter name="bundleId" value="com.saucelabs.mydemoapp.rn"/>
         <parameter name="platformName" value="iOS"/>
@@ -58,12 +58,12 @@
         </classes>
     </test>
 
-    <test name="Emulator-Regression-Android-Medium-Tablet-34" enabled="true">
+    <test name="Emulator-Regression-Android-Medium-Phone-35" enabled="true">
         <parameter name="udid" value="emulator-5554"/>
-        <parameter name="platformVersion" value="14"/>
+        <parameter name="platformVersion" value="35"/>
         <parameter name="automationName" value="UiAutomator2"/>
         <parameter name="packageName" value="com.saucelabs.mydemoapp.rn"/>
-        <parameter name="activityName" value="MainActivity"/>
+        <parameter name="activityName" value=".MainActivity"/>
         <!--
                 <parameter name="loginId" value="alice@example.com"/>
                 <parameter name="password" value="10203040"/>
@@ -73,12 +73,12 @@
         </classes>
     </test>
 
-    <test name="Emulator-Regression-Android-Medium-Phone" enabled="true">
+    <test name="Emulator-Regression-Android-Medium-Phone" enabled="false">
         <parameter name="udid" value="emulator-5558"/>
         <parameter name="platformVersion" value="14"/>
         <parameter name="automationName" value="UiAutomator2"/>
         <parameter name="packageName" value="com.saucelabs.mydemoapp.rn"/>
-        <parameter name="activityName" value="MainActivity"/>
+        <parameter name="activityName" value=".MainActivity"/>
         <!--
                 <parameter name="loginId" value="alice@example.com"/>
                 <parameter name="password" value="10203040"/>
@@ -88,12 +88,12 @@
         </classes>
     </test>
 
-    <test name="Emulator-Regression-Android-Pixel7Pro" enabled="true">
+    <test name="Emulator-Regression-Android-Pixel7Pro" enabled="false">
         <parameter name="udid" value="emulator-5556"/>
         <parameter name="platformVersion" value="13"/>
         <parameter name="automationName" value="UiAutomator2"/>
         <parameter name="packageName" value="com.saucelabs.mydemoapp.rn"/>
-        <parameter name="activityName" value="MainActivity"/>
+        <parameter name="activityName" value=".MainActivity"/>
         <!--
                 <parameter name="loginId" value="alice@example.com"/>
                 <parameter name="password" value="10203040"/>
@@ -103,12 +103,12 @@
         </classes>
     </test>
 
-    <test name="ZFlip5-Regression-Android" enabled="false">
-        <parameter name="udid" value="your device udid here"/>
-        <parameter name="platformVersion" value="14.0"/>
+    <test name="ZFlip5-Regression-Android" enabled="true">
+        <parameter name="udid" value="R5CW7275V9K"/>
+        <parameter name="platformVersion" value="34"/>
         <parameter name="automationName" value="UiAutomator2"/>
         <parameter name="packageName" value="com.saucelabs.mydemoapp.rn"/>
-        <parameter name="activityName" value="MainActivity"/>
+        <parameter name="activityName" value=".MainActivity"/>
         <!--
                 <parameter name="loginId" value="alice@example.com"/>
                 <parameter name="password" value="10203040"/>

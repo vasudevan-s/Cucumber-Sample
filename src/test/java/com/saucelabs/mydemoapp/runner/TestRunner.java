@@ -10,7 +10,7 @@ Created By: Vasudevan Sampath
  TestRunner.java is the main Test Runner for the suite (Specified in the TestNG xml file - Mobile.xml)
  */
 @CucumberOptions(features = {"src/test/resources/features"},
-        glue = {"com.saucelabs.mydemoapp.stepdefinitions"},
+        glue = {"com.saucelabs.mydemoapp.stepdefinitions", "com.saucelabs.mydemoapp.hooks"},
         plugin = {"pretty", "html:target/cucumber-reports.html"},
         monochrome = true,
         publish = true)
