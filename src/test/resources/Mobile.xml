@@ -104,7 +104,7 @@
     </test>
 
     <test name="ZFlip5-Regression-Android" enabled="true">
-        <parameter name="udid" value="R5CW7275V9K"/>
+        <parameter name="udid" value="your device udid here"/>
         <parameter name="platformVersion" value="34"/>
         <parameter name="automationName" value="UiAutomator2"/>
         <parameter name="packageName" value="com.saucelabs.mydemoapp.rn"/>
